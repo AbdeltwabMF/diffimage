@@ -4,7 +4,7 @@
 
 diff() {
 	compare "$2" "$1" png:- \
-		| montage -geometry +4+4 "$2" - "$1" png:- \
+		| montage -resize 445x -label %f -frame 5 -geometry +0+0 "$2" - "$1" png:- \
 		| display -title "$1" -
 }
 
