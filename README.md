@@ -1,6 +1,6 @@
-# diffimage
+<h1 align="center">diffimage</h1>
 
-A visual diffs for the images in the git repository.
+<h3 align="center"><em>A visual diffs for the images in the git repository.</em></h3>
 
 
 ## Demo
