@@ -3,6 +3,10 @@
 A visual diffs for the images in the git repository.
 
 
+## Demo
+![git diff](images/diff.png)
+
+
 ## Dependencies
 
 Debian/Ubuntu:
