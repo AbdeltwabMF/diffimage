@@ -4,6 +4,7 @@
 SHELL := /bin/bash
 
 LOCAL_PREFIX := $(HOME)/.local
+CONFIG_PREFIX := $(HOME)/.config
 
 # ANSI colors for shell output
 BLACK := \033[0;30m
@@ -29,6 +30,11 @@ BWHITE := \033[1;37m
 install:
 	mkdir -p $(DESTDIR)$(LOCAL_PREFIX)/bin
 	cp -u diffimage $(DESTDIR)$(LOCAL_PREFIX)/bin/
+	mkdir -p $(DESTDIR)$(CONFIG_PREFIX)/git
+	touch $(DESTDIR)$(CONFIG_PREFIX)/git/attributes
+	touch $(DESTDIR)$(CONFIG_PREFIX)/git/config
+	cat .gitattributes >> $(DESTDIR)$(CONFIG_PREFIX)/git/attributes
+	cat .gitconfig >> $(DESTDIR)$(CONFIG_PREFIX)/git/config
 	@printf "%b" "$(CYAN)diffimage$(GREEN) Installed Successfully!$(NC)\n"
 
 uninstall:
