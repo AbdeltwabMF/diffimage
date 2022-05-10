@@ -3,6 +3,18 @@
 A visual diffs for the images in the git repository.
 
 
+## Dependencies
+
+Debian/Ubuntu:
+```bash
+$ sudo apt-get install imagemagick
+```
+
+Arch:
+```bash
+$ sudo pacman -S imagemagick
+```
+
 ## Installation
 ```bash
 make install
